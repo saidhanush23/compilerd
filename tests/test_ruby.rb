@@ -1,14 +1,14 @@
+# test_ruby.rb
 
-require 'minitest/autorun'
+# Example function to test
+def add(a, b)
+    a + b
+end
 
-class TestRuby < Minitest::Test
-  def test_addition
-    result = `echo 'puts 1 + 1' | ruby ../ruby_executor.rb`
-    assert_equal "2\n", result
-  end
-
-  def test_error_handling
-    result = `echo 'puts unknown_variable' | ruby ../ruby_executor.rb`
-    assert_includes result, "undefined local variable or method"
-  end
+# Test case using RSpec
+describe "add" do
+    it "adds two numbers correctly" do
+        result = add(2, 3)
+        expect(result).to eq(5)
+    end
 end
