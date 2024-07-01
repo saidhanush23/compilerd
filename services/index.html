@@ -1,0 +1,31 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Runner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Runner</h1>
+        <div>
+            <label for="language">Select Language:</label>
+            <select id="language">
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <!-- Add options for other supported languages -->
+            </select>
+        </div>
+        <div>
+            <label for="code">Enter Your Code:</label>
+            <textarea id="code" rows="10"></textarea>
+        </div>
+        <button onclick="runCode()">Run Code</button>
+        <div id="output"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
