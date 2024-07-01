@@ -1,0 +1,16 @@
+{
+  "languages": {
+    "ruby": {
+      "compile": "",
+      "execute": "ruby ruby_executor.rb"
+    },
+    "php": {
+      "compile": "",
+      "execute": "php php_executor.php"
+    },
+    "go": {
+      "compile": "",
+      "execute": "go run go_executor.go"
+    }
+  }
+}
