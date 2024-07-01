@@ -20,7 +20,8 @@ app.use((err, req, res, next) => {
     }
     next()
 })
-// Log all api requests
+
+// Log all API requests
 app.use(
     morgan(
         'REQUEST [:date[clf]] ":method :url HTTP/:http-version" :status :user-agent',
@@ -30,6 +31,7 @@ app.use(
         },
     ),
 )
+
 app.use(
     express.urlencoded({
         extended: true,
